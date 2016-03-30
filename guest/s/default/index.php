@@ -35,8 +35,10 @@
 							<input type="hidden" id="free_ap" name="ap" value="<?php echo($_GET['ap']); ?>">
 							<input type="hidden" id="free_url" name="url" value="<?php echo($_GET['url']); ?>">
 							<input type="hidden" id="free_ssid" name="ssid" value="<?php echo($_GET['ssid']); ?>">
+							<!-- the below are optional and only used if server side acl is set -->
 							<input type="hidden" id="free_mb" name="free_mb" value="500">
-							<input type="hidden" id="free_time" name="free_time" value="1">
+							<input type="hidden" id="free_time" name="free_time" value="120">
+
 							<p align="center"><input type="submit" value="Activate My Free data" id="submitfree" class="button requires-tou"  name="byfree" /></p>
 						</div>
 					</div>
