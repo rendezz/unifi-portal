@@ -57,6 +57,7 @@ $(function() { // Jquery function def equivalent to onload event handler
 		    if(resp.activated) {
 			    window.location = $_GET['url'] == undefined ? "http://www.baselineit.co.za" : $_GET['url'];
 		    } else {
+			$('#submitvoucher').removeAttr('disabled');
 			$('#voucher_heading').addClass('error');
 			$('#voucher_allowed').css('display','inline');
 			$('#voucher_failed').css('display','inline');
@@ -65,6 +66,7 @@ $(function() { // Jquery function def equivalent to onload event handler
 		}, 
 		dataType: 'json', 
 		error: function() {
+			$('#submitvoucher').removeAttr('disabled');
 			$('#voucher_heading').addClass('error');
 			$('#voucher_allowed').css('display','inline');
 			$('#voucher_failed').css('display','inline');
